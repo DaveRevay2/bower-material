@@ -16128,7 +16128,7 @@ function MdAutocompleteCtrl ($scope, $element, $mdUtil, $mdConstant, $mdTheming,
    * @returns {boolean}
    */
   function shouldHide () {
-    if (!isMinLengthMet() || !ctrl.matches.length) return true;
+    if (!isMinLengthMet() && !ctrl.matches.length) return true;
   }
 
   /**
